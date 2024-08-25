@@ -1,0 +1,28 @@
+h2 {
+  font-family: "Verdana";
+  font-weight: normal;
+}
+
+hr {
+  width: 100%;
+}
+
+.pst {
+  display: flex;
+  flex-direction: column;
+}
+
+.pst a {
+  color: #36c;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#parr {
+  margin-top: 10px;
+}
+
+.pst a:hover {
+  color: black;
+}
