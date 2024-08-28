@@ -6,14 +6,37 @@ function funcionX(e) {
 }
 textarea.addEventListener('keyup', funcionX, false);
 
-function add() {
-  let title = document.getElementById('title').value;
-  let desp = document.getElementById('desp').value;
-  let autor = document.getElementById('autor').value;
-  console.log(title + '\n' + desp + '\n' + autor);
-  console.log(div.value)
+function posts() {
+  let titlew =  document.getElementById('titlew').value;
+  let despw = document.getElementById('descripw').value;
+  let text = document.getElementById('textarea').value;
+
+  if (titlew == "") {
+    alert("Completa los campos")
+    return 0;
+  }
+  if (text == "") {
+    alert("Escribe algo mi king");
+    return 0;
+  }
+
+  console.log("a");
+
+  console.log(titlew, despw);
 }
 
+function preview() {
+  let titlew =  document.getElementById('titlew').value;
+  let despw = document.getElementById('descripw').value;
+
+  let dv = div.value
+
+  localStorage.setItem('parr', dv)
+  localStorage.setItem('title', titlew)
+  localStorage.setItem('desp', despw)
+
+  window.open('preview', '_self');
+}
 
 /*
 window.addEventListener("beforeunload", function (event) {

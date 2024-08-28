@@ -1,36 +1,148 @@
-h2 {
-  font-size: 30px;
-  font-family: 'Verdana';
-  font-weight: normal;
-  margin: 0;
-  margin-top: 30px;
-}
-
-h3 {
-  font-family: 'Verdana';
-  font-weight: normal;
-  margin: 0;
-  margin-top: 10px;
+body {
+  /* background-color: #222; */
 }
 
 hr {
-  width: 100%;
+  border-bottom: 1px solid brown;
 }
 
-.integrantes {
-  display: flex;
-  margin: auto;
-  margin-top: 20px;
+h2 {
+  font-size: 30px;
+  font-family: 'Verdana';
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
 }
 
-.ga {
+pre {
+  text-shadow: 0px 0px 5px brown;
+}
+
+.main {
+  max-width: 950px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.box {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #3d4c2b;
+  border: 1px solid black;
+  padding: 10px;
+  border-bottom: none;
 }
 
-.parr {
-  text-align: center;
-  max-width: 600px;
-  width: 100%;
+.image img {
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
   margin-top: 10px;
+  border: 1px solid black;
 }
+
+p {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #d09426;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #e03917;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: #222;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #6f2526;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.box6 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #4b83a4;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.box7 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  background-color: #767479;
+  border: 1px solid black;
+  padding: 10px;
+  border-top: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.nav a {
+  font-family: monospace;
+  color: black;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.nav #team {
+  background-color: black;
+  color: white;
+}
+
+.nav a:hover {
+  background-color: black;
+  color: white;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gallery.css">
+  <title>Chevrez | Gallery</title>
+</head>
+<body>
+<div class="btn">
+<a href="index">BACK</a>
+</div>
+<!-- UNA NUEVA IMAGEN VA ARRIBA -->
+<div class="container">
+  <h1 class="title">Chevrez gallery</h1>
+  <div class="image-container">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczOjcw3i8FkqU4ZhdsOXkB62GGgkRzcrT0gkbuoUsTp-ZD3aWzMwrA7uI7308_5oGZ9LgttVedHglZkgkNRuPVTWBfhwl_POi50RejXdUANTx-ewNk6YSmvR6eH0TJMOH2vZNOIozZzBMkml4idxlA=w720-h720-s-no-gm?authuser=0">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczN5zHAcHatekZ_Z7DdDYNh7L8eK0_lhiIgevYRx76bxKHybLfPyFQID8idDifu9_hYrl47tgJFleyzSDme-LwL8cxG7O273oWVQvmL09pJZY3Sx3gqa05zKPaZ5BTvh4QXbUABtjY8sr1rulyEjDA=w153-h263-s-no-gm?authuser=0">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczNdIyqVOGNyDuX5zppDvSawkRVIZD4g463dEtgYRzXHkBh-aY-omX6LrTntLI6TZ24W23SoVPTI7vYD2KCPJwlRZmbNdFtfGC0Khi-TeyxRrySmPLAq4ZDcQxYidHtUtapm30Baxl38NHgkqPcVRg=w557-h992-s-no-gm?authuser=0">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczNM8-UN4VSITMFPOUeYGN_im4ZLocUR6svrAyeuDvAxH8u5RKExjhaCitUd2r3x5uIM85gtFBw8ak3J5MkjyFl66CdPOr-_v5JUu7p_xHviNDN215DgE9r_0Opz_FVm1Vgylk0_ySKepqtOq3N5Xg=w720-h390-s-no-gm?authuser=0">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczNv_JEiwnLsKzgl1zHOEzBcl9RGde2iF0befXonhRRFeokk1WSpH2zD4rV4Jmmjwf8lmNq5WWnQodGUKKJFJ_vkQWCVGb-E5jnJ7ejr5iBBItm8OzqFkz8FmCqDuQ19mLy0ay6-7drQcMO1frq3-w=w720-h746-s-no-gm?authuser=0">
+    <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczMX1F8y-n3nR18TfqypXJlBOs7sCx-QdwccQa-ADeUdKXo8MML6kMRt3HQBliEM_D8lzFaOkVQIjQSSXl_xqnMkG2qc_VOXS_DXwzJzNSiQ1q-I7PWgtpR_zAxGGBgPGP3nZ8-r9GMHGWoIdZ3pCg=w500-h500-s-no-gm?authuser=0" alt="">
+  </div>
+</div>
+
+
+<script>
+window.onload = function() {
+let img = document.getElementsByClassName('image');
+
+for (let i = 0; i < img.length; i++) {
+  img[i].addEventListener('click', function() {
+    openImage(this.src)
+  });
+}
+};
+
+function openImage(src) {
+  window.open(src, "_self");
+}
+</script>
+</body>
+</html>

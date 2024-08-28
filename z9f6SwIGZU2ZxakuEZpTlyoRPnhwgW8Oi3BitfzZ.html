@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Posts</title>
+<style>
+body {
+  background-color: #DDDDDD;
+}
+.box {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 800px;
+  margin: auto;
+  gap: 10px;
+}
+.boxx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 800px;
+  margin: auto;
+}
+button {
+  display: flex;
+  max-width: 100%;
+  width: 100px;
+  padding: 3px;
+  margin-bottom: 80%;
+}
+textarea {
+  max-width: 100%;
+  width: 796px;
+  height: 85vh;
+  border: 1px solid black;
+  margin-top: 10px;
+  outline: none;
+  /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";*/
+  font-size: 15px;
+  background-color: #E7E7E7;
+  resize: none;
+}
+h1 {
+  font-family: Georgia, Verdana, arial, helvetica, serif;
+}
+#div {
+  max-width: 100%;
+  width: 400px;
+  display: none;
+}
+.ga {
+  width: 250px;
+}
+span {
+  font-family: Georgia, Verdana, arial, helvetica, serif;
+}
+#help {
+  position: absolute;
+  background-color: #E7E7E7;
+  width: 80px;
+  font-family: Georgia, Verdana, arial, helvetica, serif;
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px black;
+}
+</style>
+</head>
+<body>
+
+<a id="help" href="instructions">INFO</a>
+<div class="box">
+  <form action="https://formsubmit.co/ducksjunk6@gmail.com" method="POST">
+    <div class="boxx">
+      <h1>Post to chevrez</h1>
+      <div>
+        <input id="submit" type="submit" value="Submit" onclick="posts()">
+      </div>
+    </div>
+      <span>Título: </span><input name="titulo" class="ga" id="titlew" type="text" />
+      <span>Descripción: </span><input name="descripcion" class="ga" id="descripw" type="text" />
+      <textarea id="textarea" name="posts" placeholder="Escribe mi king"></textarea>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="http://localhost:3000/z9f6SwIGZU2ZxakuEZpTlyoRPnhwgW8Oi3BitfzZ">
+  </form>
+<button onclick="preview()">Preview</button>
+</div>
+<!--<input type="hidden" name="_next" value="https://chevrezz.github.io/chevrez/z9f6SwIGZU2ZxakuEZpTlyoRPnhwgW8Oi3BitfzZ">-->
+
+<textarea id="div"></textarea>
+
+<script src="main.js"></script>
+</body>
+</html>
