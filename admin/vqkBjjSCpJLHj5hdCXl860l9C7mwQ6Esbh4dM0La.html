@@ -13,18 +13,12 @@
 </style>
 <body>
 <h1>ADMIN</h1>
-<span>username:</span><input type="text" id="name"/><br/><br/>
-<span>password:</span><input type="text" id="password"/><br/><br/>
+<span>username:</span> <input type="text" id="name"/><br/><br/>
+<span>password:</span> <input type="text" id="password"/><br/><br/>
 <button onclick="login()">login</button>
 
 <br/><br/>
 
-<!--
-username: chevrez<br/>
-password: ricolassssssseguroquelacontraseñapondrass
--->
-
-<br/><br/>
 
 <div id="image">
 </div>
@@ -43,12 +37,12 @@ function login() {
   localStorage.setItem('pass', password);
 
   if (username == name && psw == password) {
-    image.innerHTML = `<img id="auto" src="image/auto.jpeg">`; 
+    image.innerHTML = `<img id="auto" src="../image/auto.jpeg">`; 
     setTimeout(function() {
-      window.location = "index";
-    }, 2000)
+      window.location = "../index";
+    }, 1500)
   } else {
-    image.innerHTML = `<img id="auto" src="image/noauto.jpeg">`;
+    image.innerHTML = `<img id="auto" src="../image/noauto.jpeg">`;
     return 0;
   }
 }

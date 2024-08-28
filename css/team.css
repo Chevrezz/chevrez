@@ -122,8 +122,6 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border: 1px solid grey;
   margin-bottom: 10px;
   border-radius: 10px;
   gap: 15px;
