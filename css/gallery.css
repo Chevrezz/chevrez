@@ -26,7 +26,7 @@
 }
 
 .container .image-container {
-  columns: 5 250px;
+  columns: 5 120px;
   gap: 15px;
   background-color: #222;
   padding: 10px;
@@ -38,7 +38,7 @@
   border-radius: 5px;
   max-width: 100%;
   width: 400px;
-  border: 5px solid grey;
+  border: 5px solid brown;
   cursor: pointer;
 }
 
