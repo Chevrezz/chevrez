@@ -16,6 +16,11 @@ function posts() {
     console.log("ga");
     return 0;
   }
+  if (text == "") {
+    alert("Escribe algo mi king");
+    console.log("ga2");
+    return 0;
+  }
 
   //console.log("a");
 
