@@ -34,8 +34,8 @@
 <div class="nav">
   <a href="index" class="home">Home</a> |
   <a href="team">Team info</a> |
-  <a href="posts">Posts</a> |
-  <a href="gallery">Image/Video</a>
+  <a href="posts">Posts</a> 
+  <a href="gallery" id="gallery">| Image/Video</a>
 </div>
 
 <div class="image">
@@ -75,9 +75,14 @@ window.onload = function() {
   let name = localStorage.getItem('nm')
   let pass = localStorage.getItem('pass')
   let admin = document.getElementById('admin');
+  let gallery = document.getElementById('gallery');
 
   if (name && pass) {
-    admin.innerHTML = `<a id="ad" href="admin/z9f6SwIGZU2ZxakuEZpTlyoRPnhwgW8Oi3BitfzZ">[crear posts]</a>`
+    admin.innerHTML = `<a id="ad" href="admin/51tTd9bBWFERHZZLR3M1GqMQm4zKKYDqJxViFucK">ADMIN</a>`
+    gallery.style.backgroundColor = "red";
+    gallery.style.color = "white";
+    gallery.style.display = "flex";
+    gallery.style.borderRadius = "5px";
   }
 }
 </script>

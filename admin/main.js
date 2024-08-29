@@ -13,14 +13,11 @@ function posts() {
 
   if (titlew == "") {
     alert("Completa los campos")
-    return 0;
-  }
-  if (text == "") {
-    alert("Escribe algo mi king");
+    console.log("ga");
     return 0;
   }
 
-  console.log("a");
+  //console.log("a");
 
   console.log(titlew, despw);
 }
@@ -35,7 +32,7 @@ function preview() {
   localStorage.setItem('title', titlew)
   localStorage.setItem('desp', despw)
 
-  window.open('preview', '_self');
+  window.open('../preview', '_self');
 }
 
 /*
