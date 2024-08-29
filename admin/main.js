@@ -40,6 +40,20 @@ function preview() {
   window.open('../preview', '_self');
 }
 
+
+function ga() {
+  let nm = localStorage.getItem('nm');
+  let pass = localStorage.getItem('pass');
+
+  if (nm && pass) {
+  } else {
+    alert("No eres admin hijito")
+    window.open("../index", "_self");
+  }
+}
+ga()
+
+
 /*
 window.addEventListener("beforeunload", function (event) {
   event.preventDefault();
