@@ -76,13 +76,18 @@ window.onload = function() {
   let pass = localStorage.getItem('pass')
   let admin = document.getElementById('admin');
   let gallery = document.getElementById('gallery');
+  let exit = document.getElementById('exit');
 
   if (name && pass) {
     admin.innerHTML = `<a id="ad" href="admin/51tTd9bBWFERHZZLR3M1GqMQm4zKKYDqJxViFucK">ADMIN</a>`
+
+    // UI
+
     gallery.style.backgroundColor = "red";
     gallery.style.color = "white";
     gallery.style.display = "flex";
     gallery.style.borderRadius = "5px";
+
   }
 }
 </script>

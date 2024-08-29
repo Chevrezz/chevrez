@@ -50,6 +50,18 @@ for (let i = 0; i < img.length; i++) {
 function openImage(src) {
   window.open(src, "_self");
 }
+
+function ga() {
+  let nm = localStorage.getItem('nm');
+  let pass = localStorage.getItem('pass');
+
+  if (nm && pass) {
+  } else {
+    alert("No eres admin hijito")
+    window.open("../index", "_self");
+  }
+}
+ga()
 </script>
 </body>
 </html>
