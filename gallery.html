@@ -33,10 +33,20 @@
     <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczNv_JEiwnLsKzgl1zHOEzBcl9RGde2iF0befXonhRRFeokk1WSpH2zD4rV4Jmmjwf8lmNq5WWnQodGUKKJFJ_vkQWCVGb-E5jnJ7ejr5iBBItm8OzqFkz8FmCqDuQ19mLy0ay6-7drQcMO1frq3-w=w720-h746-s-no-gm?authuser=0">
     <img class="image" src="https://lh3.googleusercontent.com/pw/AP1GczMX1F8y-n3nR18TfqypXJlBOs7sCx-QdwccQa-ADeUdKXo8MML6kMRt3HQBliEM_D8lzFaOkVQIjQSSXl_xqnMkG2qc_VOXS_DXwzJzNSiQ1q-I7PWgtpR_zAxGGBgPGP3nZ8-r9GMHGWoIdZ3pCg=w500-h500-s-no-gm?authuser=0" alt="">
   </div>
+  <div id="targetSection"></div>
 </div>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+$(document).ready(function(){
+    $(".row").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#targetSection").offset().top
+        }, 1000); // 1000 ms = 1 segundo
+    });
+});
+
 window.onload = function() {
 let img = document.getElementsByClassName('image');
 
@@ -58,7 +68,7 @@ function ga() {
   if (nm && pass) {
   } else {
     alert("No eres admin hijito")
-    window.open("../index", "_self");
+    window.open("index", "_self");
   }
 }
 ga()

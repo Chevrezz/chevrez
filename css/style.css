@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 
+@font-face {
+  src: url(../image/Monaco.ttf);
+  font-family: 'Monaco';
+}
+
 body {
   margin: 0;
-  font-family: monospace;
+  font-family: 'Monaco';
+  font-size: 12px;
   max-width: 950px;
   box-sizing: border-box;
   padding: 0 30px;
   margin: 0 auto;
+  background: #151515 url("../image/bkg.png") 0 0;
+  color: white;
 }
 
 a {
@@ -46,7 +54,7 @@ pre {
 }
 
 .nav a {
-  color: black;
+  color: white;
   padding: 3px;
 }
 
