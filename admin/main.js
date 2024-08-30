@@ -53,7 +53,6 @@ function ga() {
 }
 ga()
 
-
 /*
 window.addEventListener("beforeunload", function (event) {
   event.preventDefault();
