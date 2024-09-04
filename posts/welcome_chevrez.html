@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/ico" href="../image/logo.jpg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <title>Chevrez | Posts</title>
+</head>
+<body>
+<main>
+  <h1>. : : Chevrez : : .</h1>
+  <div class="banner">
+  </div>
+  <div class="nav">
+    <div class="nav-link">
+      <a href="../index" class="link">[ Home ]</a>
+      <a href="../list-posts" class="link">[ List  posts ]</a>
+      <a href="../about" class="link">[ About ] </a>
+    </div>
+  </div>
+
+<br/><br/>
+
+<div class="box">
+<div class="posts">
+<h2>Publicaciones de chevrez</h2>
+<hr/>
+<!-- LISTA DE PUBLICACIONES -->
+
+<article>
+<div class="title">
+<h2 class="title-posts" id="title">Bienvenido a chevrez</h2>
+</div>
+<img src="../image/logoo.jpg">
+<p>
+Somos chevrez y acabamos de lanzar un sitio web. Aunque todavía no esta al 100%.
+</p>
+<p>Aún no esta en versión para celular.</p>
+<span class="footer">Por <span class="footer-name">chevrez</span> | Publicado el 2 de septiembre del 2024</span>
+</article>
+
+</div>
+
+<!-- CUADRO DE DERECHA -->
+<div class="box2">
+  <div class="admin-box" id="admin-box">
+    <h2>Admin</h2>
+    <hr/>
+    <div class="team-link">
+      <a href="../admin/z9f6SwIGZU2ZxakuEZpTlyoRPnhwgW8Oi3BitfzZ">Crear Posts</a>
+      <a href="../gallery">Galeria Chevrez</a>
+    </div>
+  </div>
+
+  <br id="hr"/>
+
+  <div class="anun">
+    <h2>Conmemorativo</h2>
+    <img src="../image/chad.jpg">
+  </div>
+  <br/>
+  <div class="team">
+    <h2>Compartir</h2>
+    <hr/>
+    <div class="team-link">
+      <a href="#ex1" rel="modal:open">Obtener URL</a>
+      <a href="" id="whatsapp-share">Compartir en WhatsApp <img id="red" src="../image/wasap.svg"></a>
+      <a href="" id="facebook-share">Compartir en Facebook <img id="red" src="../image/fb.svg"></a>
+      <a href="" id="twitter-share">Compartir en Twitter <img id="red" src="../image/x.svg"></a>
+      <a href="" id="reddit-share">Compartir en Reddit <img id="red" src="../image/reddit.svg"></a>
+    </div>
+  </div>
+</div>
+
+</div>
+</main>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+  <div class="btn-modal">
+    <p id="result"></p>
+    <div class="btn" onclick="copiar()">Copiar url</div>
+  </div>
+  <span id="copy"></span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="../js/redes.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

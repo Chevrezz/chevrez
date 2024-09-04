@@ -1,0 +1,18 @@
+body {
+  background: #151515 url("../image/bkg.png") 0 0;
+}
+
+.fecha {
+  margin-top: 10px;
+}
+
+.ga {
+  display: flex;
+}
+
+#volver {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
