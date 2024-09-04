@@ -4,42 +4,7 @@ let div = document.querySelector('#div');
 function funcionX(e) {
   div.innerHTML = e.target.value;
 }
-textarea.addEventListener('keyup', funcionX, false);
-
-function posts() {
-  let titlew =  document.getElementById('titlew').value;
-  let despw = document.getElementById('descripw').value;
-  let text = document.getElementById('textarea').value;
-
-  if (titlew == "") {
-    alert("Completa los campos")
-    console.log("ga");
-    return 0;
-  }
-  if (text == "") {
-    alert("Escribe algo mi king");
-    console.log("ga2");
-    return 0;
-  }
-
-  //console.log("a");
-
-  console.log(titlew, despw);
-}
-
-function preview() {
-  let titlew =  document.getElementById('titlew').value;
-  let despw = document.getElementById('descripw').value;
-
-  let dv = div.value
-
-  localStorage.setItem('parr', dv)
-  localStorage.setItem('title', titlew)
-  localStorage.setItem('desp', despw)
-
-  window.open('../preview', '_self');
-}
-
+// textarea.addEventListener('keyup', funcionX, false);
 
 function ga() {
   let nm = localStorage.getItem('nm');
@@ -52,6 +17,24 @@ function ga() {
   }
 }
 ga()
+
+
+function posts() {
+  const cont = tinymce.activeEditor.getContent();
+  let posts = document.getElementById('submit')
+  
+  posts.style.display = "none";
+
+  console.log(cont);
+}
+
+tinymce.init({
+  selector: 'textarea#edit',
+  license_key: 'gpl',
+  toolbar: 'undo red | styles forecolor | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | image | link | preview',
+  plugins: 'image editimage link preview',
+});
+
 
 /*
 window.addEventListener("beforeunload", function (event) {
