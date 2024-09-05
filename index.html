@@ -3,7 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/ico" href="image/logo.jpg" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobil.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Chevrez</title>
 </head>
 <body>
@@ -21,6 +23,42 @@
 
 <br/>
 
+<div class="boton">
+<div onclick="view()" style="font-size:24px" id="burger" class="fa">&#xf0c9;</div>
+</div>
+
+<div class="res-mobil" id="res-mobil">
+  <select name="cars" id="admin-mobil" onchange="redirectToPage()">
+    <option value="" disabled selected value>ADMIN</option>
+    <option value="admin/z9f6SwIGZU2ZxakuEZpTlyoRPnhwgW8Oi3BitfzZ">Crear Posts</option>
+    <option value="gallery">Galeria Chevrez</option>
+  </select>
+  <select name="cars" id="cars">
+    <option disabled selected value>Team info</option>
+    <option>Kayden</option>
+    <option>Borink</option>
+    <option>ducks</option>
+    <option>EfraX</option>
+    <option>TheCoop3r_</option>
+    <option>RozUnit</option>
+    <option>El PADRINO</option>
+  </select>
+  <div class="anun">
+    <h2>Frase de la semana</h2>
+    <div class="frase">
+      <p>Nos atrevemos muy poco para lo fugaz que es la vida.</p>
+    </div>
+  </div>
+  <div class="mob-link">
+    <a href="#ex1" rel="modal:open">Obtener URL</a>
+    <a href="" class="ga" id="whatsapp-share"><img id="red" src="image/wasap.svg"></a>
+    <a href="" class="ga" id="facebook-share"><img id="red" src="image/fb.svg"></a>
+    <a href="" class="ga" id="twitter-share"><img id="red" src="image/x.svg"></a>
+    <a href="" class="ga" id="reddit-share"><img id="red" src="image/reddit.svg"></a>
+  </div>
+
+</div>
+
 <div class="box">
 <div class="posts">
 <h2>Chevrez Posts</h2>
@@ -34,7 +72,7 @@
 <a href="posts/el_cel_de_borink"><h2 class="title-posts">Miercoles 4 de septiembre de 2024</h2></a>
 </div>
 <b>El cel de borink</b>
-<p>Borink webon en una semana perdió su número por span y luego en un viaje pierde el celular, eso le pasa por no bañarse una semana.</p>
+<p>Borink webon en una semana perdió su número por spam y luego en un viaje pierde el celular, eso le pasa por no bañarse una semana.</p>
 <span class="footer">Publicado por <span class="footer-name">chevrez</span>
 </article>
 
@@ -68,7 +106,7 @@ Somos chevrez y acabamos de lanzar un sitio web. Aunque todavía no esta al 100%
   <br id="hr"/>
 
   <div class="anun">
-    <h2>Frases de la semana</h2>
+    <h2>Frase de la semana</h2>
     <div class="frase">
       <p>Nos atrevemos muy poco para lo fugaz que es la vida.</p>
     </div>
