@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Monaco';
+  src:url(image/Monaco.ttf);
+}
+
+body {
+  text-align: center;
+  font-family: 'Monaco';
+  line-height: 1.43;
+  font-size: 14px;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: black;
+}
+
+hr {
+  border: 1px solid #eeeeeeee;
+}
+
+img {
+  max-width: 100%;
+  width: 230px;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px blue;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+  max-width: 100%;
+  width: 100px;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+}
+
+.back:hover {
+  color: white;
+}
+
+.user {
+  display: none;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+#team-title {
+  display: none;
+  justify-content: center;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 700px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.list-posts {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.list-posts img {
+  max-width: 100%;
+  width: 200px;
+  margin: auto;
+}
+
+.title-posts {
+  display: flex;
+  font-size: 20pt;
+  font-family: Georgia, Verdana, arial, helvetica, serif;
+}
+
+.parr {
+  display: flex;
+  text-align: left;
+  line-height: 16px;
+  font-size: 13px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#hr {
+  width: 100%;
+  border: 1px solid darkgrey;
+}
+
+.back-post {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+  max-width: 100%;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+}
+
+.back-post:hover {
+  color: white;
+}
