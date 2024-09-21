@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevrez-music</title>
+<style>
+body { background-image: url("https://wallpapers.com/images/hd/rage-comic-faces-meme-ug4vv8oslaqchboh.jpg"); background-repeat: no-repeat; font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+main {
+  text-align: center;
+  color: white;
+}
+a { text-decoration: none;}
+img { max-width: 100%; width: 800px; height: 350px; border-radius: 5px; }
+.user { display: flex; justify-content: center; gap: 10px; margin-top: 30px; }
+.user a { display: flex; justify-content: center; align-items: center; background-color: brown; color: white; border: 1px solid black; border-radius: 10px; padding: 10px; width: 200px; height: 30px; font-weight: bold; }
+.user a:hover { background-color: rgba(27, 27, 27, 0.792); }
+.ga { display: flex; }
+.back { background-color: brown; padding: 10px; color: white; font-weight: bold; border-radius: 30px;}
+</style>
+</head>
+<body>
+<div class="ga">
+<a href="index" class="back">Regresar</a>
+</div>
+<main>
+<h1>Chevrez Music</h1>
+<img src="https://i.pinimg.com/originals/c2/1d/e4/c21de43465e25cafa4bab80fa7311b19.gif">
+
+<div class="user">
+  <a href="https://www.youtube.com/@borink_zzz/videos" target="_blank">Borink</a>
+  <a href="https://www.youtube.com/@efrax_x/videos" target="_blank">EfraX</a>
+</div>
+</main>
+
+<audio id="red" autoplay >
+  <source src="aea.ogg" type="audio/ogg">
+</audio>
+<script>
+var red = document.getElementById('red');
+red.volume = 0.1;
+</script>
+</body>
+</html>
