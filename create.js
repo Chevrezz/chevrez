@@ -1,22 +1,32 @@
-<!DOCTYPE html>
+const fs = require('fs');
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question('Ingrese el nombre del archivo que quiere crear: ', (name) => {
+
+  const layout = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chevrez Furifunlai</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="image/machin2.png" type="image/gif">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../image/machin2.png" type="image/gif">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body id="body">
+<body>
   <div class="main">
     <div class="box">
       <div class="respon-logo">
-        <a href="index"><img src="image/chevrez.png" alt="Chevrez" class="logo2"></a>
+        <a href="../index"><img src="../image/chevrez.png" alt="Chevrez" class="logo2"></a>
         <br/>
         <div class="nav-respon">
           <nav class="nav-links">
-            <a href="index"><b>Home</b></a>
+            <a href="../index"><b>Home</b></a>
             <a href="" onclick="team()">Team</a>
             <a href="">aea</a>
           </nav>
@@ -24,9 +34,9 @@
         </div>
       </div>
       <header class="nav">
-        <a href="index"><img src="image/chevrez.png" alt="Chevrez" class="logo"></a>
+        <a href="index"><img src="../image/chevrez.png" alt="Chevrez" class="logo"></a>
         <nav class="nav-links">
-          <a href="index"><b>Home</b></a>
+          <a href="../index"><b>Home</b></a>
           <a href="" onclick="team()">Team</a>
           <a href="">aea</a>
         </nav>
@@ -34,40 +44,49 @@
       <br/>
       <main class="content">
         <div class="posts" id="publi">
+          <div class="posts-perfil">
+            <img class="image-perfil" src="image/logo.jpg">
+            <div class="info">
+              <span class="name" id="name"> <img src="image/verify.svg" alt=""></span>
+              <div class="parr">
+                <p id="parr"></p><br/>
+                <p id="parr"></p>
+              </div>
+              <a href="" class="mas">Mostrar más</a>
+              <a href class="mas" id="mas"></a>
+              <div class="posts-banner">
+                <img class="image" src="">
+              </div>
+              <span class="date" id="fecha"></span>
+            </div>
+          </div>
         </div>
       </main>
     </div>
     <div class="box-right">
       <div class="boxx">
         <div class="anun">
-          <span>Publicaciones</span>
-          <hr>
-          <div class="total-anun">
-            <span id="number"></span>
-            <span>Total Posts</span>
-          </div>
-        </div>
-        <br/>
-        <div class="anun">
           <span>Homenaje -> Machin</span>
           <hr>
           <div class="box-image">
-            <img class="image" src="image/machin.jpg">
+            <img class="image" src="../image/machin.jpg">
           </div>
         </div>
         <br/>
         <div class="anun">
-          <span><i class="fa-solid fa-book-open"></i> Posts Recientes</span>
+          <span><i class="fa-solid fa-photo-film"></i> Photo</span>
           <hr>
-          <div class="list-posts" id="list-posts">
+          <div class="box-image">
+            <img class="image" src="">
           </div>
+          <span class="date" id="fecha"></span>
         </div>
         <br/>
         <div class="anun">
           <span><i class="fa-solid fa-share"></i> Compartir</span>
           <hr>
           <div class="share">
-            <span onclick="copy()">Compartir Chevrez</span>
+            <span onclick="copy()">Compartir Posts</span>
             <span id="res" style="display: none;"></span>
           </div>
         </div>
@@ -77,26 +96,18 @@
       <div class="box-right2" id="modal-box">
         <div class="boxx">
           <div class="anun">
-            <span>Publicaciones</span>
-            <hr>
-            <div class="total-anun">
-              <span id="number2"></span>
-              <span>Total Posts</span>
-            </div>
-          </div>
-          <br/>
-          <div class="anun">
             <span>Homenaje -> Machin</span>
             <hr>
             <div class="box-image">
-              <img class="image" src="image/machin.jpg">
+              <img class="image" src="../image/machin.jpg">
             </div>
           </div>
           <br/>
           <div class="anun">
-            <span><i class="fa-solid fa-book-open"></i> Posts Recientes</span>
+            <span><i class="fa-solid fa-photo-film"></i> Photo</span>
             <hr>
-            <div class="list-posts" id="list-posts2">
+            <div class="box-image">
+              <img class="image" src="../image/chad.jpg">
             </div>
           </div>
           <br/>
@@ -104,7 +115,7 @@
             <span><i class="fa-solid fa-share"></i> Compartir</span>
             <hr>
             <div class="share">
-              <span onclick="copy()">Compartir Chevrez</span>
+              <span onclick="copy()">Compartir Posts</span>
               <span id="res" style="display: none;"></span>
             </div>
           </div>
@@ -112,8 +123,6 @@
       </div>
     </div>
   </div>
-
-<script src="main.js" type="module"></script>
 <script>
 window.onload = function() {
   let img = document.getElementsByClassName('image');
@@ -165,4 +174,15 @@ function modal() {
 }
 </script>
 </body>
-</html>
+</html>`
+
+  fs.writeFile(`status/${name}.html`, layout,  (error) => {
+    if (error) {
+      throw error;
+    }
+
+    console.log(`El archivo ${name} ha sido creado!!`);
+  });
+  
+  rl.close();
+});
