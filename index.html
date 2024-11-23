@@ -1,180 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chevrez Furifunlai</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="image/machin2.png" type="image/gif">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevrez</title>
+<style>
+body {
+  font-family: monospace;
+}
+img {
+  max-width: 100%;
+  width: 200px;
+}
+</style>
 </head>
 <body>
-<img class="logo" src="image/machin2.png">
-<div class="nav">
-  <a href="">Home</a>
-  <a href="" onclick="anun()">Team</a>
-  <a href="" onclick="anun()">Random</a>
-  <div class="burger" onclick="modal()"><i class="fa-solid fa-bars"></i></div>
-</div>
-<div class="main">
-  <div class="aea">
+<p>Cuando este listo dale click click a (<a href="#" onclick="warning()">chevrez.com</a>)</p>
 
-    <div class="box-center">
-      <span class="chev-news">Chevrez News</span>
-      <hr/>
+<h1>***** bit.ly/chevrezz *****</h1>
 
-<!-- LISTA DE PUBLICACIONES -->
-<div class="posts">
+<p>
+Tal vez leas esto o tal vez no, al principio dije si crear esto o no, pero lo haré.<br/><br/>
 
-<div class="content">
-<a href="status/contexto" class="title">Contexto(🥶)</a>
-<img class="image" src="image/jared_frio.png">
-<p>Una respuesta sabia para responder en un momento serio xd.</p>
-<div class="date">Martes, 5 de noviembre del 2024 <a href="status/contexto">Compartir</a></div>
-</div><br/>
+Si no sabes de lo que estoy hablando, crear un sitio web donde los chevrez puedan publicar publicaciones,<br/>
+y que las personas se puedan crear una cuenta, para resumirlo hacer tipo red social.<br/><br/>
 
-<div class="content">
-<a href="status/chevrez-website" class="title">Chevrez website</a>
-<img class="image" src="image/chad.jpg">
-<p>Primera publicación, en realidad no se que poner ahora, ahora mismo estoy escribiendo cualquier cosa para que sea puro relleno. Umm el diseño de la página esta decente. WA</p>
-<div class="date">Sábado, 2 de noviembre del 2024 <a href="status/chevrez-website">Compartir</a></div>
-</div>
+Echa un vistaso a las <a href="">malcriadas</a> de cada integrante 🗿.
+</p>
 
-</div>
+<h2>***** chevrez.com (en proceso) *****</h2>
 
-    </div>
+<p>Para tener el dominio, debemos tener dinero 🤑</p>
 
-
-
-    <div class="box-right">
-
-      <div class="boxx">
-        <span class="title">Anuncio</span>
-        <hr/>
-        <div class="photo">
-          <img src="image/cheems-carga.gif" />
-        </div>
-      </div>
-
-      <br/>
-
-      <div class="boxx">
-        <span class="title">Team</span>
-        <hr/>
-        <div class="list-user">
-          <span>borink</span>
-          <span>ducks</span>
-          <span>TheCoop3r_</span>
-          <span>EfraX</span>
-          <span>RozUnit</span>
-          <span>EL PADRINO</span>
-        </div>
-      </div>
-
-      <br/>
-
-      <div class="boxx">
-        <span class="title">Compartir Chevrez</span>
-        <hr/>
-        <div class="btn">
-          <a href="" id="copyButton">Copiar Link</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="modal" id="modal">
-      <div class="boxx">
-        <span class="title">Anuncio</span>
-        <hr/>
-        <div class="photo">
-          <img src="image/cheems-carga.gif" />
-        </div>
-      </div>
-
-      <br/>
-
-      <div class="boxx">
-        <span class="title">Team</span>
-        <hr/>
-        <div class="list-user">
-          <span>borink</span>
-          <span>ducks</span>
-          <span>TheCoop3r_</span>
-          <span>EfraX</span>
-          <span>RozUnit</span>
-          <span>EL PADRINO</span>
-        </div>
-      </div>
-
-      <br/>
-
-      <div class="boxx">
-        <span class="title">Compartir Chevrez</span>
-        <hr/>
-        <div class="btn">
-          <a href="" id="copyButton2">Copiar Link</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-<script src="main.js" type="module"></script>
 
 <script>
-function anun() {
-  alert("Me da flojera hijit@ 🗿")
+function warning() {
+  alert("En proceso...")
 }
-
-// COPIAR URL DE LA PAGINA
-document.getElementById('copyButton').addEventListener('click', function() {
-  const currentURL = window.location.href;
-
-  navigator.clipboard.writeText(currentURL).then(function() {
-    alert('El link fue copiado: ' + currentURL);
-  }).catch(function(error) {
-    console.error('Error al copiar el URL: ', error);
-  });
-});
-
-document.getElementById('copyButton2').addEventListener('click', function() {
-  const currentURL = window.location.href;
-
-  navigator.clipboard.writeText(currentURL).then(function() {
-    alert('El link fue copiado: ' + currentURL);
-  }).catch(function(error) {
-    console.error('Error al copiar el URL: ', error);
-  });
-});
-
-var c = 0
-function modal() {
-  let md = document.getElementById('modal')
-
-  if (c < 1) {
-    md.style.display = "flex"
-    c++
-  } else {
-    md.style.display = "none"
-    c--
-  }
-}
-
-window.onload = function() {
-  let img = document.getElementsByClassName('image');
-
-  for (let i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', function() {
-      openImage(this.src)
-    });
-  }
-};
-
-function openImage(src) {
-  window.open(src, "_self");
-}
-
 </script>
 </body>
 </html>
